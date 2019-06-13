@@ -1,4 +1,4 @@
-let alfabeto = " ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789,.";
 let desplazamientoDescifrar = document.getElementById("numero2");
 let textoDescifrar = document.getElementById("textoDescifradoIngreso");
 
@@ -40,7 +40,7 @@ function cifrar(textoCifrar, desplazamientoCifrar) {
   let palabracifrada = "";
   for (let i = 0; i < palabra.length; i++) {
     let posicionoriginal = alfabeto.indexOf(palabra.substr(i, 1));
-    let posicioncifrada = (posicionoriginal + desplazamientoCifrar) % 27;
+    let posicioncifrada = (posicionoriginal + desplazamientoCifrar) % 39;
     palabracifrada += alfabeto.substr(posicioncifrada, 1);
   }
   return palabracifrada;
@@ -62,7 +62,7 @@ function descifrar(textoDescifrar, desplazamientoDescifrar) {
   let palabracifrada = "";
   for (let i = 0; i < palabra.length; i++) {
     let posicionoriginal = alfabeto.indexOf(palabra.substr(i, 1));
-    let posicioncifrada = (posicionoriginal - desplazamientoDescifrar) % 27;
+    let posicioncifrada = (posicionoriginal - desplazamientoDescifrar) % 39;
     palabracifrada += alfabeto.substr(posicioncifrada, 1);
   }
   return palabracifrada;
