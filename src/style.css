@@ -1,1 +1,32 @@
-/* Acá va tu código */
+body {
+  font-size: 20px;
+  background-color: #3399ff;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+
+button {
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+}
+
+
+#pagina-cifrar {
+  display: none;
+}
+
+#pagina-descifrar {
+  display: none;
+}
+
+#seleccione-un-tema {
+  display: none;
+}

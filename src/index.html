@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+
+<head>
+    <title>Papis Seguros </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="pagina-inicio"><br>
+        <h1>Bienvenidos Papis Seguros</h1><br>
+        <h2>Que deseas hacer:</h2><br>
+        <button id="botonSeleccionCifrar">Cifrar Mensaje </button>
+        <button id="botonSeleccionDescifrar">Descifrar Mensaje</button>
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+    <div id="pagina-cifrar">
+        <br><br>
+        <h3> Seleccione clave (del 1 al 12)
+            <input id="numero1" type="number" value="Cifrar" placeholder="aqui"><br><br></h 3>
+            <h3>Ingrese texto a cifrar</h3>
+            <textarea id="textoCifrarIngreso" type="text" rows="7" cols="40"
+                placeholder="Texto que desa cifrar"></textarea><br><br>
+            <button id="botonCifrar">Cifrar </button><br><br>
+            <textarea id="textoCifrarDevuelto" rows="7" cols="40" placeholder="Texto cifrardo"></textarea><br><br>
+            <button id="botonCopiarC">Copiar </button>
+            <button id="botonVolverC">Volver </button>
+    </div>
+
+    <div id="pagina-descifrar">
+        <br><br>
+        <h3> Seleccione clave (del 1 al 12)
+            <input id="numero2" type="number" value="Cifrar"  placeholder="aqui"> <br><br></h3>
+        <h3>Ingrse texto a descifrar</h3>
+        <textarea id="textoDescifradoIngreso" rows="7" cols="40" placeholder="Texto cifrardo"></textarea><br><br>
+        <button id="botonDescifrar">Descifrar </button><br><br>
+        <textarea id="textoDescifradoDevuelto" rows="7" cols="40"
+            placeholder="Texto que desa cifrar"></textarea><br><br>
+        <button id="botonCopiarD">Copiar </button>
+        <button id="botonVolverD">Volver </button>
+    </div>
+
+    <h1 id="resultado"></h1>
+    <script type="text/javascript" src="app.js"> </script>
+    <!--<script>
+        document.getElementById("resultado").innerHTML = mostrarcifrado();
+    </script>-->
+
+
+
+
+</body>
+
 </html>
