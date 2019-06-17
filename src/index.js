@@ -1,6 +1,4 @@
 let alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789,.";
-let desplazamientoDescifrar = document.getElementById("numero2");
-let textoDescifrar = document.getElementById("textoDescifradoIngreso");
 
 //bontones de la pagina de inicio donde se selecciona que se quiere hacer
 const botonSeleccionarCifrar = document.getElementById("botonSeleccionCifrar");
@@ -39,9 +37,14 @@ function cifrar(textoCifrar, desplazamientoCifrar) {
   let palabra = "" + textoCifrar;
   let palabracifrada = "";
   for (let i = 0; i < palabra.length; i++) {
-    let posicionoriginal = alfabeto.indexOf(palabra.substr(i, 1));
-    let posicioncifrada = (posicionoriginal + desplazamientoCifrar) % 39;
-    palabracifrada += alfabeto.substr(posicioncifrada, 1);
+    let posicioncifrada=0;
+    let posicionoriginal = palabra.charCodeAt(i);
+    if (posicionoriginal == 32 || posicionoriginal == 44 || posicionoriginal==46) {
+      posicioncifrada = posicionoriginal;
+    } else {
+      posicioncifrada = (posicionoriginal - 65 + desplazamientoCifrar) % 26 + 65;
+    }
+    palabracifrada += String.fromCharCode(posicioncifrada);
   }
   return palabracifrada;
 }
@@ -61,14 +64,19 @@ function descifrar(textoDescifrar, desplazamientoDescifrar) {
   let palabra = "" + textoDescifrar;
   let palabracifrada = "";
   for (let i = 0; i < palabra.length; i++) {
-    let posicionoriginal = alfabeto.indexOf(palabra.substr(i, 1));
-    let posicioncifrada = (posicionoriginal - desplazamientoDescifrar) % 39;
-    palabracifrada += alfabeto.substr(posicioncifrada, 1);
+    let posicioncifrada=0;
+    let posicionoriginal = palabra.charCodeAt(i);
+    if (posicionoriginal == 32 || posicionoriginal == 44 || posicionoriginal==46) {
+      posicioncifrada = posicionoriginal;
+    } else {
+      posicioncifrada = (posicionoriginal - 65 - desplazamientoDescifrar) % 26 + 65;
+    }
+    palabracifrada += String.fromCharCode(posicioncifrada)
   }
   return palabracifrada;
 }
 //Funcion para mostrar el texto a descifrar
-  function mostrarDescifrado() {
+function mostrarDescifrado() {
   let desplazamientoDescifrar = document.getElementById("numero2").value;
   let textoDescifrar = document.getElementById("textoDescifradoIngreso").value.toUpperCase();
   let mostarTextoDescifrado = descifrar(textoDescifrar, parseInt(desplazamientoDescifrar));
