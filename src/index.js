@@ -7,9 +7,9 @@ botonCifrar.addEventListener("click", mostrarCifrado);
 const botonDescifrar = document.getElementById("botonDescifrar");
 botonDescifrar.addEventListener("click", mostrarDescifrado);
 
-//Boton para limpiar
+/*/Boton para limpiar
 const botonLimpiar = document.getElementById("botonLimpiar");
-botonLimpiar.addEventListener("click", limpiar);
+botonLimpiar.addEventListener("click",);*/
 
 //Funcion para mostrar el texto a cifrar
 function mostrarCifrado() {
@@ -27,16 +27,16 @@ function mostrarDescifrado() {
   document.getElementById("textoSalida").value = mostarTextoDescifrado;
 }
 
-function limpiar() {
+/*function limpiar() {
   var ele1 = document.getElementById("textoEntrada").value;
-  for (var i = 0; i < ele1.length; i++)
+  for (let i = 0; i < ele1.length; i++)
     ele1[i].checked = false;
   var ele2 = document.getElementById("textoSalida").value;
-  for (var i = 0; i < ele2.length; i++)
+  for (let i = 0; i < ele2.length; i++)
     ele2[i].checked = false;
   }
 
-/*function cifrar(textoCifrar, desplazamientoCifrar) {
+function cifrar(textoCifrar, desplazamientoCifrar) {
     let palabra = "" + textoCifrar;
     let palabracifrada = "";
     for (let i = 0; i < palabra.length; i++) {

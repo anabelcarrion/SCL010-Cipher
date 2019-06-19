@@ -1,6 +1,6 @@
 window.cipher = {
   encode: (textoCifrar, desplazamientoCifrar) => {
-    let palabra = "" + textoCifrar;
+    let palabra = "" + textoCifrar; 
     let palabracifrada = "";
     for (let i = 0; i < palabra.length; i++) {
       let posicioncifrada = 0;
