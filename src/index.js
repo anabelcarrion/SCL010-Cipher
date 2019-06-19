@@ -3,6 +3,14 @@
 const botonCifrar = document.getElementById("botonCifrar");
 botonCifrar.addEventListener("click", mostrarCifrado);
 
+//Boton para realizar el descifrado
+const botonDescifrar = document.getElementById("botonDescifrar");
+botonDescifrar.addEventListener("click", mostrarDescifrado);
+
+//Boton para limpiar
+const botonLimpiar = document.getElementById("botonLimpiar");
+botonLimpiar.addEventListener("click", limpiar);
+
 //Funcion para mostrar el texto a cifrar
 function mostrarCifrado() {
   let desplazamientoCifrar = document.getElementById("entradaDesplazamiento").value;
@@ -11,10 +19,6 @@ function mostrarCifrado() {
   document.getElementById("textoSalida").value = mostarTextoCifrado;
 }
 
-//Boton para realizar el descifrado
-const botonDescifrar = document.getElementById("botonDescifrar");
-botonDescifrar.addEventListener("click", mostrarDescifrado);
-
 //Funcion para mostrar el texto a descifrar
 function mostrarDescifrado() {
   let desplazamientoDescifrar = document.getElementById("entradaDesplazamiento").value;
@@ -22,6 +26,15 @@ function mostrarDescifrado() {
   let mostarTextoDescifrado = cipher.decode(textoDescifrar, parseInt(desplazamientoDescifrar));
   document.getElementById("textoSalida").value = mostarTextoDescifrado;
 }
+
+function limpiar() {
+  var ele1 = document.getElementById("textoEntrada").value;
+  for (var i = 0; i < ele1.length; i++)
+    ele1[i].checked = false;
+  var ele2 = document.getElementById("textoSalida").value;
+  for (var i = 0; i < ele2.length; i++)
+    ele2[i].checked = false;
+  }
 
 /*function cifrar(textoCifrar, desplazamientoCifrar) {
     let palabra = "" + textoCifrar;
