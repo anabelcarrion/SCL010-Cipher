@@ -2,80 +2,25 @@
 <html>
 
 <head>
-    <ti
-    tle>Papis Seguros </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+ <title>Papis Seguros</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div id="pagina-inicio"><br>
-        <h1>Bienvenidos Papis Seguros</h1><br>
-        <h2>Que deseas hacer:</h2><br>
-        <button id="botonSeleccionCifrar">Cifrar Mensaje </button>
-        <button id="botonSeleccionDescifrar">Descifrar Mensaje</button>
-    </div>
 
-    <div id="pagina-cifrar">
-        <br><br>
-        <h3> Seleccione clave (del 1 al 12)
-            <input id="numero1" type="number" value="Cifrar" placeholder="aqui"><br><br></h 3>
-            <h3>Ingrese texto a cifrar</h3>
-            <textarea id="textoCifrarIngreso" type="text" rows="7" cols="40"
-                placeholder="Texto que desa cifrar"></textarea><br><br>
-            <button id="botonCifrar">Cifrar </button><br><br>
-            <textarea id="textoCifrarDevuelto" rows="7" cols="40" placeholder="Texto cifrardo"></textarea><br><br>
-            <button id="botonCopiarC">Copiar </button>
-            <button id="botonVolverC">Volver </button>
-    </div>
-
-    <div id="pagina-descifrar">
-        <br><br>
-        <h3> Seleccione clave (del 1 al 12)
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-            <input id="numero2" type="number" value="Cifrar"  placeholder="aqui"> <br><br></h3>
-        <h3>Ingrse texto a descifrar</h3>
-        <textarea id="textoDescifradoIngreso" rows="7" cols="40" placeholder="Texto cifrardo"></textarea><br><br>
-        <button id="botonDescifrar">Descifrar </button><br><br>
-        <textarea id="textoDescifradoDevuelto" rows="7" cols="40"
-            placeholder="Texto que desa cifrar"></textarea><br><br>
-        <button id="botonCopiarD">Copiar </button>
-        <button id="botonVolverD">Volver </button>
-    </div>
-
-    <h1 id="resultado"></h1>
-    <script type="text/javascript" src="index.js"> </script>
-    <!--<script>
-        document.getElementById("resultado").innerHTML = mostrarcifrado();
-    </script>-->
-
-
-
-
+  <h1>Bienvenidos a Papis seguros</h1>
+  <h2>Para que nuestros niños tengan una infacia feliz</h2>
+  <h3> Seleccione clave (del 1 al 12)</h3>
+    <input id="entradaDesplazamiento" type="number" placeholder="aqui"><br><br>
+    <h3>Ingrese texto que desea cifrar o descifrar</h3>
+    <textarea id="textoEntrada" type="text" rows="7" cols="40" placeholder="Ingrese texto aqui"></textarea><br><br>
+    <button id="botonCifrar">Cifrar </button>
+    <button id="botonDescifrar">Descifrar </button><br><br>
+    <textarea id="textoSalida" rows="7" cols="40" placeholder="Texto Resultante"></textarea><br><br>
+    <button id="botonCopiar"> Copiar </button>
+    <button id="botonLimpiar">Limpiar </button>
+   
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
 </body>
-
 </html>
