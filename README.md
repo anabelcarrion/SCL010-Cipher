@@ -1,6 +1,6 @@
 # Papis Seguros
 
-_La aplicacion Papis Seguros, esta creada con el objetivo de que los padres puedan enviarse mensajes de textos codificagos o encriptados, con el objetivo de que si sus hijos toman sus celulares, no puedan saber lo que dicen sus mensajes. De esta manera se evita que los niños puedan leer mensajes que son sensibles para ellos. _
+_La aplicacion Papis Seguros, esta creada con el objetivo de que los padres puedan enviarse mensajes de textos codificagos o encriptados, con el objetivo de que si sus hijos toman sus celulares, no puedan saber lo que dicen sus mensajes. De esta manera se evita que los niños puedan leer mensajes que son sensibles para ellos._
 
 ### Pricipales usuarios 📋
 
@@ -8,7 +8,7 @@ _Los principales usuarios son para los adultos de un nucleo familiar (padres, ab
 
 ### Objetivos del producto📋
 
-_ El objetivo fundamental de la aplicacion es mantener a los niños alejados de las conversaciones de los adultos. Muchas veces los hijos menores de edad toman los celulares de los padres por diversos motivos, y de esta forma los padres y el nucleo familiar aseguran que el niño no entienda de lo que hablan los padres._
+_El objetivo fundamental de la aplicacion es mantener a los niños alejados de las conversaciones de los adultos. Muchas veces los hijos menores de edad toman los celulares de los padres por diversos motivos, y de esta forma los padres y el nucleo familiar aseguran que el niño no entienda de lo que hablan los padres._
 
 ## Comenzando 🚀
 
