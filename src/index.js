@@ -11,9 +11,9 @@ botonDescifrar.addEventListener("click", mostrarDescifrado);
 const botonLimpiar = document.getElementById("botonLimpiar");
 botonLimpiar.addEventListener("click", limpiar);
 
-/*/Boton para copiar las areas de texto
+//Boton para copiar las areas de texto
 const botonCopiar = document.getElementById("botonCopiar");
-botonCopiar.addEventListener("click",copiar );*/
+botonCopiar.addEventListener("click",copiar );
 
 
 
@@ -39,25 +39,14 @@ function limpiar() {
   document.getElementById("textoSalida").value="";
   }
 
-  /*function copiar(textoSalida) {
-
-    // Crea un campo de texto "oculto"
-    let aux = document.createElement("textoSalida");
+  function copiar() {
+    let aux = document.createElement("input");
+    aux.setAttribute("value", document.getElementById("textoSalida").value);
     
-    // Asigna el contenido del elemento especificado al valor del campo
-    aux.setAttribute("value", document.getElementById(textoSalida).innerHTML);
-    
-    // Añade el campo a la página
     document.body.appendChild(aux);
-    
-    // Selecciona el contenido del campo
     aux.select();
-    
-    // Copia el texto seleccionado
     document.execCommand("copy");
-    
-    // Elimina el campo de la página
     document.body.removeChild(aux);
     
     return  aux;
-    }*/
+    }

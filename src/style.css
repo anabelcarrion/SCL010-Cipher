@@ -48,7 +48,7 @@ body {
 #descripciontitulo {
   font-size: 13px;
   color: #737373;
-  MARGIN-LEFT: 1PX;
+  MARGIN-LEFT: 8PX;
 }
 
 #barraclave {
@@ -204,5 +204,5 @@ body {
 .iconotitulo {
   font-size: 40px;
   display: inline-block;
-  width: 50px;
+  width: 36px;
 }
