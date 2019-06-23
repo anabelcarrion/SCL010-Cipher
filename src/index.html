@@ -2,25 +2,73 @@
 <html>
 
 <head>
- <title>Papis Seguros</title>
+  <title>Papis Seguros</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
- 
-  <h1>Bienvenidos a Papis Seguros</h1>
-  <h2>Una aplicacion que permite que sus mensajes, sus hijos no le entiendan</h2>
-  <h3>Ingrese una clave de 3 digitos</h3>
-    <input id="entradaDesplazamiento" type="number" placeholder="aqui"><br><br>
-    <h3>Ingrese texto que desea cifrar o descifrar</h3>
-    <textarea id="textoEntrada" type="text" rows="7" cols="40" placeholder="Ingrese texto aqui"></textarea><br><br>
-    <button id="botonCifrar">Cifrar </button>
-    <button id="botonDescifrar">Descifrar </button><br><br>
-    <textarea id="textoSalida" rows="7" cols="40" placeholder="Texto Resultante"></textarea><br><br>
-    <button id="botonLimpiar">Limpiar </button>
-    <button id="botonCopiar"> Copiar </button>
+  <div id="barratitulo">
+    <h1 id="titulo"> Papis Seguros </h1><br>
+    <spam id="descripciontitulo">Para manterner la privacidad en la pareja</spam>
+  </div>
+
+  <div id="barrainfo">
+    <div class="paso">
+      <label class="numero">1</label>
+      <label class="indicacion">Ingrese clave de seguridad</label>
+      <label class="descripcionindicacion">Esta clave la debe compartir con su pareja para descifrar el mensaje</label>
+    </div>
+    <div class="paso">
+        <label class="numero">2</label>
+        <label class="indicacion">Ingrese el mensaje</label>
+        <label class="descripcionindicacion">Coloque el mensaje que desea cifar o descifrar en cuadro de texto de la izquierda </label>
+    </div>
+    <div class="paso">
+        <label class="numero">3</label>
+        <label class="indicacion">Cifre o descifre</label>
+        <label class="descripcionindicacion">Presiones los botones de cifrar o descifrar dependiendo de la accion que desee realizar</label>
+    </div>
+    <div class="paso">
+        <label class="numero">4</label>
+        <label class="indicacion">Resultado</label>
+        <label class="descripcionindicacion">En el cuadro de texto de la derecha aparecerá el texto resultante, si desea compartir el texto lo puede hacer con el boton copiar</label>
+    </div>
+    </div>
+
+  <div id="barraclave">
+    <div id="clave">
+        <label>Clave</label>
+        <input id="entradaDesplazamiento" type="number" placeholder="aqui">
+    </div>
+    <div id="botonesaccion">
+        <button id="botonCifrar" class="boton">Cifrar </button>
+        <button id="botonDescifrar" class="boton">Descifrar </button><br><br>
+      </div>
+
+  </div>
+
+  
+
+  <div id="cuadrodetextos">
+    <div class="texto">
+        <textarea id="textoEntrada" class="column izquierda" type="text"
+        placeholder="Ingrese texto aqui"></textarea>
+    </div>
+    <div class="texto">
+        <textarea id="textoSalida" class="column derecha" placeholder="Texto Resultante"></textarea>
+    </div>
     
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+  </div>
+  
+
+  <div id="botonesauxiliares">
+      <button id="botonLimpiar" class="boton aux">Limpiar </button>
+      <button id="botonCopiar" class="boton aux"> Copiar </button>
+    </div>
+  
+  
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
 </body>
+
 </html>

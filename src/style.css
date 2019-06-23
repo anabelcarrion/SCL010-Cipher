@@ -1,32 +1,152 @@
 body {
-  font-size: 20px;
-  background-color: #3399ff;
-  font-family: sans-serif;
-  text-align: center;
-  color: white;
+  font-family: 'Roboto',arial,sans-serif !important;
+  padding: 15px;
 }
 
-button {
-  font-family: sans-serif;
-  text-decoration: none;
-  padding: 8px;
-  font-weight: 600;
-  font-size: 100%;
+#titulo {
+  display: inline-block;
+  font-size: 35px;
+  position: relative;
+  top: -1.5px;
+  vertical-align: middle;
+  margin-bottom: 0px;
+}
+
+#descripciontitulo {
+  font-size: 13px;
+  color: #737373;
+  MARGIN-LEFT: 1PX;
+}
+
+#barraclave {
+  height: 50px;
+  background-color: darkorange;
+  font-size: 15px;
   color: #ffffff;
-  background-color: #1883ba;
-  border-radius: 6px;
-  border: 2px solid #0016b0;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  width: 96.5%;
+  border-radius: 0px 0px 32px 32px;
+  display: inline-block;
+}
+
+#clave{
+  width: 30%;
+  margin-left: 15px;
+  position: absolute;
+  z-index: 1000;
+}
+
+#barratitulo{
+  padding-bottom: 5px;
+  color: darkorange;
+  border-bottom: #efefef 5px solid;
+  width: 96.5%;
+}
+
+#cuadrodetextos{
+
+}
+
+#botonesaccion{
+  width: 100%;
+  text-align: center;
+}
+
+#botonesauxiliares{
+  display: inline-block;
+  margin: 15px 0px;
+  width: 96.5%;
+  text-align: center;
+}
+
+#entradaDesplazamiento{
+  margin-left: 5px;
+  padding: 3px;
+  padding-left: 11px;
+  padding-right: 5px;
+  border-radius: 16px;
+  border-color: darkorange;
+  width: 100px;
+  height: 20px;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  height: 150px;
+  padding: 20px;
+  margin-top: 13px;
+  border: 2px solid darkorange;
+  font-size: 24px;
+  font-family: 'Roboto',arial,sans-serif;
+
+}
+
+.izquierda{
+  border-radius: 30px 0px 0px 30px;
+}
+
+.derecha{
+  margin-left: -2px;
+  border-radius: 0px 30px 30px 0px;
 }
 
 
-#pagina-cifrar {
-  display: none;
+.boton{
+  width: 120px;
+  height: 30px;
+  text-decoration: none;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  color: darkorange;
+  background-color: #fffefe;
+  border-radius: 16px;
+  border: 1px solid #bfbfbf;
 }
 
-#pagina-descifrar {
-  display: none;
+.aux{  
+  background-color: darkorange;
+  color: #ffffff;
+  border: #ffc886 solid 2px;
 }
 
-#seleccione-un-tema {
-  display: none;
+#barrainfo{
+  border-bottom: #555555 solid 2px;
+  width: 96.5%;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  display: inline-block;
+}
+
+.paso{
+  color: #989898;
+  width: 25%;
+  float: left;
+  font-size: 12px;
+}
+
+.indicacion{
+  color: #6b6b6b;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.numero{
+  color: #909090;
+  font-size: 20px;
+  font-weight: bold;
+  border: darkorange solid 2px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.descripcionindicacion{
+  color: #737373;
+  display: inline-block;
+  padding: 9px 35px 0px 55px;
 }
