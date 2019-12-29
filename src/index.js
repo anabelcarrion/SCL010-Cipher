@@ -1,4 +1,5 @@
 //Boton para realizar el cifrado
+
 const botonCifrar = document.getElementById("botonCifrar");
 botonCifrar.addEventListener("click", mostrarCifrado);
 
