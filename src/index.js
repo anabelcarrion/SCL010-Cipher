@@ -22,6 +22,9 @@ function mostrarCifrado() {
   if (desplazamientoCifrar == "") {
     alert("Por favor ingrese una clave numerica")
 
+  } else if (textoCifrar == "") {
+    alert("Por favor ingrese el texto que desea cifrar")
+
   } else {
     let mostarTextoCifrado = cipher.encode(textoCifrar, parseInt(desplazamientoCifrar));
     document.getElementById("textoSalida").value = mostarTextoCifrado;
@@ -32,12 +35,18 @@ function mostrarCifrado() {
 function mostrarDescifrado() {
   let desplazamientoDescifrar = document.getElementById("entradaDesplazamiento").value;
   let textoDescifrar = document.getElementById("textoEntrada").value;
-  let mostarTextoDescifrado = cipher.decode(textoDescifrar, parseInt(desplazamientoDescifrar));
-  document.getElementById("textoSalida").value = mostarTextoDescifrado;
+  if (desplazamientoDescifrar == "") {
+     alert("Por favor ingrese una clave numerica")
+  } else if (textoDescifrar == "") {
+    alert("Por favor ingrese el texto que desea descifrar")
+  } else {
+    let mostarTextoDescifrado = cipher.decode(textoDescifrar, parseInt(desplazamientoDescifrar));
+    document.getElementById("textoSalida").value = mostarTextoDescifrado;
+  }
 }
 
 function limpiar() {
-  document.getElementById("entradaDesplazamiento").value = 0;
+  document.getElementById("entradaDesplazamiento").value = "";
   document.getElementById("textoEntrada").value = "";
   document.getElementById("textoSalida").value = "";
 }
